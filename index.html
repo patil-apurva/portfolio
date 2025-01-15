@@ -22,7 +22,7 @@
                 <p class="name" style="text-align: center;">
                 Apurva Patil
                 </p>
-                <p style="text-align: justify;">Hi there! I am a PhD student at UT Austin advised by <a href="https://sites.utexas.edu/tanaka/">Prof. Takashi Tanaka</a> and <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis">Prof. Luis Sentis</a>. I am a part of <a href="https://robotics.utexas.edu/">TEXAS Robotics</a> and <a href="https://autonomy.oden.utexas.edu/">Center for aUTonomy</a>. I am broadly interested at the intersection of control theory, robotics, and learning theory to solve problems in decision-making under uncertainty. Recent topics I have worked on include risk-aware motion planning, learning-based control, risk analysis of motion plans, and stochastic dynamic games.
+                <p style="text-align: justify;">Hi there! I am a PhD student at UT Austin advised by <a href="https://sites.utexas.edu/tanaka/">Prof. Takashi Tanaka</a> and <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/sentis">Prof. Luis Sentis</a>. I am a part of <a href="https://robotics.utexas.edu/">TEXAS Robotics</a> and <a href="https://autonomy.oden.utexas.edu/">Center for aUTonomy</a>. I am broadly interested at the intersection of robotics, control theory, and learning theory to solve problems in decision-making under uncertainty. Recent topics I have worked on include safety-based motion planning, learning-based control, risk analysis of motion plans, and stochastic dynamic games.
                 </p>
                 <p style="text-align: justify;">
                   In Summer 2024, I interned at <a href="https://www.aboutamazon.com/news/tag/robotics">Amazon Robotics</a> as an Applied Scientist II, where I developed a real-time motion planning algorithm for an 8 DOF manipulator, a key component of their system for efficiently stowing items within storage pods—what they refer to as the <a href="https://www.amazon.science/latest-news/how-amazon-robotics-researchers-are-solving-a-beautiful-problem">"beautiful problem"</a>.
@@ -51,9 +51,12 @@
               <td style="padding:0px;width:100%;vertical-align:middle">
                 <h2 style="text-align: center;">Recent News</h2>
                 <p style="text-align: justify;">
-                  Happenings of the last one year. Updated 12/04/24.
+                  Happenings of the last one year. Updated 12/16/24.
                 </p>
                 <ul>
+                  <li style="text-align: justify;">
+                    Dec 16: Presented our work on sample complexity analysis of path integral control at CDC 2024 [<a href="data/Sample_Complexity_of_PI_Presentation_CDC_2024.pdf">Slides</a>] [<a href="https://ieeexplore.ieee.org/document/10556579">Paper</a>] 
+                  </li>
                   <li style="text-align: justify;">
                     Dec 4: Passed the proposal and the qualifying exam. [<a href="https://utexas.box.com/s/ixicx6lyygrwyjvgqieiphm6le24vp76">Talk</a>] [<a href="data/PhD_Proposal_Presentation_Apurva.pdf">Slides</a>] [<a href="data/Ph_D__Dissertation_Proposal_Apurva.pdf">Proposal</a>] 
                   </li>
@@ -220,7 +223,7 @@ The results demonstrate significant performance improvements, with 44.0% increas
         G. Hanasusanto, T. Tanaka
         <em> Conference on Decision and Control (CDC)</em>, 2024
         <br>
-        [<a href="https://ieeexplore.ieee.org/document/10556579">Paper</a>] [<a href="https://github.com/patil-apurva/PI_sample_complexity">Code</a>]
+        [<a href="https://ieeexplore.ieee.org/document/10556579">Paper</a>] [<a href="https://github.com/patil-apurva/PI_sample_complexity">Code</a>] [<a href="data/Sample_Complexity_of_PI_Presentation_CDC_2024.pdf">Slides</a>]
         <p></p>
         <p style="text-align: justify;">
           In this paper, we derive a path integral formulation for a discrete-time stochastic LQR problem and conduct its sample complexity analysis. It is well known that the stochastic LQR problem can be solved efficiently using the backward Riccati equation. However, we focus on stochastic LQR with an aim to build a foundation for a theoretical understanding of the sample complexity of path integral when the analytical expressions of optimal control law and the cost are available. An end-to-end bound on the error in the control signals is derived as a function of sample size. Our analysis shows that the sample size of path integral depends only logarithmically on the dimension of the control input; hence does not suffer from the curse of dimensionality. Finally, we provide a mechanism to quantify the worst-case performance loss of the path integral control.
