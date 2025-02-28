@@ -86,6 +86,45 @@
           <h2 style="text-align: center;">Publications</h2>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+            <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+              <td style="padding:0px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='internerf_image'>
+                    <img src='images/continuous_time_deception.jpg' width=100%>
+                  </div>
+                  <img src='images/continuous_time_deception.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function internerf_start() {
+                    document.getElementById('internerf_image').style.opacity = "1";
+                  }
+        
+                  function internerf_stop() {
+                    document.getElementById('internerf_image').style.opacity = "0";
+                  }
+                  internerf_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+        
+                  <span class="papertitle" style="text-align: justify;">Deceptive Attack Synthesis and Its Mitigation for Nonlinear Cyber-Physical Systems: Path Integral Approach</span>
+        
+                <br>
+                <strong>A. Patil</strong>,
+                M. Hansen,
+                K. Morgenstein,
+                L. Sentis,
+                T. Tanaka
+                <em>in preparation
+                   </em>
+                <p></p>
+                <p style="text-align: justify;">
+                  This paper studies the synthesis and mitigation of deceptive attacks in nonlinear cyber-physical systems (CPS). We adopt a Kullback–Leibler (KL) divergence measure of stealthiness, motivated by hypothesis testing and detection theory, to capture the trade-off between an attacker’s desire to remain stealthy and its goal of degrading system performance. First, we characterize the worst-case stealthy attack by formulating a KL control problem and present the path integral approach to compute this attack policy numerically. Second, we consider how a controller can mitigate the impact of such stealthy attacks by formulating a minimax KL control problem, yielding a zero-sum game between the attacker and the controller. Again, we leverage a path integral–based solution that computes saddle-point policies for both players through Monte Carlo simulations. We validate our approach using a unicycle navigation problem, demonstrating how an attacker can covertly drive the unicycle into unsafe regions, and how the controller can adapt its policy to reduce collisions under worst-case attacks.                 </p> 
+              </td>
+            </tr>
+
+
             <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
               <td style="padding:0px;width:25%;vertical-align:top">
                 <div class="one">
