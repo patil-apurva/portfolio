@@ -51,9 +51,15 @@
               <td style="padding:0px;width:100%;vertical-align:middle">
                 <h2 style="text-align: center;">Recent News</h2>
                 <p style="text-align: justify;">
-                  Happenings of the last one year. Updated 1/16/25.
+                  Happenings of the last one year. Updated 04/11/25.
                 </p>
                 <ul>
+                  <li style="text-align: justify;">
+                    Apr 10: Submitted our paper "Model Predictive Path Integral Control for Roll-to-Roll Manufacturing" to Modeling, Estimation and Control Conference, (MECC 2025).
+                  </li>
+                  <li style="text-align: justify;">
+                    Apr 02: Successfully defended my thesis "Advancing Frontiers of Path Integral Theory for Stochastic Optimal Control".
+                  </li>
                   <li style="text-align: justify;">
                     Jan 16: Our paper titled "Task Hierarchical Control via Null-Space Projection and Path Integral Approach" was accepted at American Control Conference (ACC) 2025.
                   </li>
@@ -72,12 +78,12 @@
                   <li style="text-align: justify;">
                     Dec 14: Presented our work on risk-minimizing two-player zero-sum game at CDC 2023. [<a href="data/CDC_23_presentation__zero_sum_game.pdf">Slides</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/10383399">Paper</a>] 
                   </li>
-                  <li style="text-align: justify;">
+                  <!-- <li style="text-align: justify;">
                     Dec 13: Presented our work on simulator-driven deceptive control at CDC 2023. [<a href="data/CDC_23_presentation__Deceptive_control.pdf">Slides</a>] [<a href="https://ieeexplore.ieee.org/abstract/document/10383936">Paper</a>] 
                   </li>
                   <li style="text-align: justify;">
                     Mar 3: Presented our work on upper and lower bounds for end-to-end risks in stochastic robot navigation at IFAC-WC 2023. [<a href="data/IFAC_23_presentation.pdf">Slides</a>] [<a href="https://www.sciencedirect.com/science/article/pii/S2405896323008340">Paper</a>]
-                  </li>
+                  </li> -->
                 </ul>
               </td>
             </tr>
@@ -86,6 +92,43 @@
           <h2 style="text-align: center;">Publications</h2>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+            <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+              <td style="padding:0px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='internerf_image'>
+                    <img src='images/roll-to-roll.jpg' width=100%>
+                  </div>
+                  <img src='images/roll-to-roll.jpg' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function internerf_start() {
+                    document.getElementById('internerf_image').style.opacity = "1";
+                  }
+        
+                  function internerf_stop() {
+                    document.getElementById('internerf_image').style.opacity = "0";
+                  }
+                  internerf_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+        
+                  <span class="papertitle" style="text-align: justify;">Model Predictive Path Integral Control for Roll-to-Roll Manufacturing</span>
+        
+                <br>
+                C. Martin,
+                <strong>A. Patil</strong>,
+                W. Li,
+                T. Tanaka,
+                D. Chen
+                <em>submitted to Modeling, Estimation and Control Conference, (MECC 2025)
+                   </em>
+                <p></p>
+                <p style="text-align: justify;">
+                  Roll-to-roll (R2R) manufacturing is a continuous processing technology essential for scalable production of thin-film materials and printed electronics, but precise control remains challenging due to subsystem interactions, nonlinearities, and process disturbances. This paper proposes a Model Predictive Path Integral (MPPI) control formulation for R2R systems, leveraging a GPU-based Monte-Carlo sampling approach to efficiently approximate optimal controls online. Crucially, MPPI easily handles non-differentiable cost functions, enabling the incorporation of complex performance criteria relevant to advanced manufacturing processes. A case study demonstrates that MPPI significantly improves tension regulation performance compared to conventional model predictive control (MPC), highlighting its suitability for real-time control in advanced manufacturing.
+              </td>
+            </tr>
 
             <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
               <td style="padding:0px;width:25%;vertical-align:middle">
@@ -112,7 +155,6 @@
         
                 <br>
                 <strong>A. Patil</strong>,
-                M. Hansen,
                 K. Morgenstein,
                 L. Sentis,
                 T. Tanaka
