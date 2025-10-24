@@ -133,3 +133,19 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+/* ---------- Award styling ---------- */
+.award-line {
+  display: inline-block;
+  font-size: 15px;
+  color: #d4af37;             /* gold-like color */
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Subtle glowing effect for the trophy */
+@keyframes glow {
+  from { text-shadow: 0 0 3px #fff, 0 0 5px #ffd700; }
+  to   { text-shadow: 0 0 8px #fff, 0 0 12px #ffcc00; }
+}
