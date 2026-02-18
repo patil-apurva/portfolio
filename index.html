@@ -187,25 +187,31 @@
             </tr>
 
             <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
-               <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
-          <source src="images/Drunken_spider_short.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/drunken.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function nuvo_start() {
-            document.getElementById('nuvo_image').style.opacity = "1";
-          }
+        <td style="padding:20px;width:25%;vertical-align:middle">
+  <div class="one" onmouseover="nuvo_start()" onmouseout="nuvo_stop()">
+    
+    <div class="two" id="nuvo_image">
+      <video width="100%" muted autoplay loop playsinline preload="auto">
+        <source src="images/Drunken_spider_short.mp4" type="video/mp4">
+      </video>
+    </div>
 
-          function nuvo_stop() {
-            document.getElementById('nuvo_image').style.opacity = "0";
-          }
-          nuvo_stop()
-        </script>
-      </td>
+    <img src="images/drunken.png" width="100%">
+    
+  </div>
+
+  <script>
+    function nuvo_start() {
+      document.getElementById("nuvo_image").style.opacity = "1";
+    }
+
+    function nuvo_stop() {
+      document.getElementById("nuvo_image").style.opacity = "0";
+    }
+
+    nuvo_stop();
+  </script>
+</td>
               <td style="padding:20px;width:75%;vertical-align:middle">
         
                   <span class="papertitle" style="text-align: justify;">Path Integral Methods for Synthesizing and Preventing Stealthy Attacks in Nonlinear Cyber-Physical Systems</span>
