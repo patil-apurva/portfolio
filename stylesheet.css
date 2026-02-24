@@ -149,3 +149,59 @@ span.highlight {
   from { text-shadow: 0 0 3px #fff, 0 0 5px #ffd700; }
   to   { text-shadow: 0 0 8px #fff, 0 0 12px #ffcc00; }
 }
+
+/* ---- Top-right navigation (added) ---- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Provide an offset so anchored sections don't hide under the fixed nav */
+.anchor {
+  scroll-margin-top: 80px;
+}
+
+h2[id] {
+  scroll-margin-top: 80px;
+}
+
+.topnav {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 9999;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e6e6e6;
+  border-radius: 999px;
+  padding: 8px 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  backdrop-filter: blur(8px);
+}
+
+.topnav a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #1772d0; /* matches existing link color */
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.topnav a:hover {
+  background: rgba(23, 114, 208, 0.10);
+}
+
+/* Mobile: allow wrapping so it doesn't go off-screen */
+@media screen and (max-width: 700px) {
+  .topnav {
+    left: 12px;
+    right: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 16px;
+  }
+}
